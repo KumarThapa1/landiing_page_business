@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="background"></div>
     <div class="container">
-        <h1>Something Big is Coming!</h1>
-        <p>We are launching soon. Stay tuned!</p>
-        <div id="countdown">
-            <p><span id="days">00</span> Days</p>
-            <p><span id="hours">00</span> Hours</p>
-            <p><span id="minutes">00</span> Minutes</p>
-            <p><span id="seconds">00</span> Seconds</p>
+        <h1 class="fade-in">🚀 Something Big is Coming!</h1>
+        <p class="fade-in">We are launching soon. Stay tuned!</p>
+
+        <div id="countdown" class="fade-in">
+            <div class="time-box"><span id="days">00</span> Days</div>
+            <div class="time-box"><span id="hours">00</span> Hours</div>
+            <div class="time-box"><span id="minutes">00</span> Minutes</div>
+            <div class="time-box"><span id="seconds">00</span> Seconds</div>
         </div>
+
+        <button class="notify-btn" onclick="alert('Thanks for staying tuned!')">Notify Me!</button>
     </div>
     <script src="script.js"></script>
 </body>
